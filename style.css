@@ -1,0 +1,49 @@
+/* --------------------------------- PALETA DE CORES-----------------------------------*/
+#color-pallet {
+    display: inline-block;
+}
+
+#black {
+    background: black;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    border: solid black 1px;
+}
+#red {
+    background: red;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    border: solid black 1px;
+}
+#green {
+    background: green;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    border: solid black 1px;
+}
+#blue {
+    background: blue;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    border: solid black 1px;
+}
+/* --------------------------------- PALETA DE CORES-----------------------------------*/
+
+/* --------------------------------- PIXEL BOARD---------------------------------------*/
+#pixel-board {
+    width: 250px;
+    height: 250px;
+    border: solid black 1px;
+}
+
+.pixel {
+    display: inline-block;
+    background-color: white;
+    border: solid black 1px;
+    width: 40px;
+    height: 40px;
+}
