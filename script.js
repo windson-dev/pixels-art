@@ -6,13 +6,16 @@ let getColorGreen = document.querySelector('#green');
 let getColorBlue = document.querySelector('#blue');
 getColorBlack.className = 'color selected'
 
+let getAllColors = document.querySelectorAll('.color')
+
 /*            gerador de pixels para pintar            */ 
 function pixelsGenerate() {
 
     for (let index = 1; index <= 25; index += 1) { 
         let pixels = document.createElement('div')
-        getPixelBoard.appendChild(pixels);
         pixels.className = 'pixel';
+        pixels.addEventListener('click', paintColors)
+        getPixelBoard.appendChild(pixels);
     }
 }
 
@@ -82,4 +85,25 @@ function selectColorBlack() {
     })
 }
 selectColorBlack()
+
+function colorsbox(){
+    getAllColors[0].style.backgroundColor = 'black';
+    getAllColors[1].style.backgroundColor = 'red';
+    getAllColors[2].style.backgroundColor = 'green';
+    getAllColors[3].style.backgroundColor = 'blue';
+}
+colorsbox()
+
+function paintColors(event){
+    
+    event.target.style.backgroundColor = getAllColors[0].style.backgroundColor
+
+    if(getColorRed.className === 'color selected') {
+        event.target.style.backgroundColor = getAllColors[1].style.backgroundColor;
+    } else if (getColorGreen.className === 'color selected') {
+        event.target.style.backgroundColor = getAllColors[2].style.backgroundColor;
+    } else if (getColorBlue.className === 'color selected'){
+        event.target.style.backgroundColor = getAllColors[3].style.backgroundColor;
+    }
+}
 

@@ -11,21 +11,21 @@
     border: solid black 1px;
 }
 #red {
-    background: red;
+    background-color: red;
     width: 90px;
     height: 90px;
     display: inline-block;
     border: solid black 1px;
 }
 #green {
-    background: green;
+    background-color: green;
     width: 90px;
     height: 90px;
     display: inline-block;
     border: solid black 1px;
 }
 #blue {
-    background: blue;
+    background-color: blue;
     width: 90px;
     height: 90px;
     display: inline-block;
