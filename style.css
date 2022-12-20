@@ -1,6 +1,7 @@
 /* --------------------------------- PALETA DE CORES-----------------------------------*/
 #color-pallet {
     display: inline-block;
+    text-align: center;
 }
 
 #black {
@@ -35,9 +36,10 @@
 
 /* --------------------------------- PIXEL BOARD---------------------------------------*/
 #pixel-board {
-    width: 250px;
-    height: 250px;
+    width: 1000px;
+    height: 1000px;
     border: solid black 1px;
+    text-align: center;
 }
 
 .pixel {
@@ -45,5 +47,6 @@
     background-color: white;
     border: solid black 1px;
     width: 40px;
+    text-align: center;
     height: 40px;
 }

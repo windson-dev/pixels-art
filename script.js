@@ -11,7 +11,7 @@ let getAllColors = document.querySelectorAll('.color')
 /*            gerador de pixels para pintar            */ 
 function pixelsGenerate() {
 
-    for (let index = 1; index <= 25; index += 1) { 
+    for (let index = 1; index < 500; index += 1) { 
         let pixels = document.createElement('div')
         pixels.className = 'pixel';
         pixels.addEventListener('click', paintColors)
@@ -88,8 +88,8 @@ selectColorBlack()
 
 function colorsbox(){
     getAllColors[0].style.backgroundColor = 'black';
-    getAllColors[1].style.backgroundColor = 'red';
-    getAllColors[2].style.backgroundColor = 'green';
+    getAllColors[1].style.backgroundColor = 'yellow';
+    getAllColors[2].style.backgroundColor = 'white';
     getAllColors[3].style.backgroundColor = 'blue';
 }
 colorsbox()
